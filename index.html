@@ -80,7 +80,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: rgba(10, 10, 13, 0.9);
+      background: rgba(10, 10, 13, 0.92);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-gold);
       z-index: 1000;
@@ -142,27 +142,28 @@
       color: var(--champagne);
     }
 
-    /* Hero Section */
+    /* Hero Section with New Image */
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
       position: relative;
-      background: linear-gradient(rgba(10, 10, 13, 0.75), rgba(10, 10, 13, 0.9)), 
-                  url('https://i.ibb.co/5XBBWRgH/1788875566052.png') center/cover no-repeat;
-      padding-top: 5rem;
+      background: linear-gradient(180deg, rgba(10, 10, 13, 0.78) 0%, rgba(10, 10, 13, 0.88) 60%, rgba(10, 10, 13, 1) 100%), 
+                  url('https://i.ibb.co/fYHgFxX4/1788880987965.png') center center / cover no-repeat;
+      padding-top: 6rem;
+      padding-bottom: 4rem;
     }
 
     .hero-content {
       text-align: center;
-      max-width: 820px;
+      max-width: 840px;
       margin: auto;
-      padding: 3rem 0;
+      padding: 2rem 0;
     }
 
     .exclusive-tag {
       display: inline-block;
-      padding: 6px 18px;
+      padding: 6px 20px;
       background: rgba(212, 175, 55, 0.12);
       border: 1px solid var(--border-gold);
       border-radius: 50px;
@@ -171,18 +172,21 @@
       letter-spacing: 1.5px;
       text-transform: uppercase;
       margin-bottom: 1.5rem;
+      backdrop-filter: blur(4px);
     }
 
     .hero h1 {
       font-size: 3.2rem;
       line-height: 1.2;
       margin-bottom: 1.5rem;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.6);
     }
 
     .hero p {
-      color: #D1D1D6;
+      color: #E2E2E8;
       font-size: 1.15rem;
       margin-bottom: 2.5rem;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
     }
 
     .btn-gold {
@@ -227,7 +231,7 @@
       color: #000;
     }
 
-    /* What We Offer / Experiences */
+    /* Experiences Section */
     .experience {
       padding: 6rem 0;
     }
@@ -358,7 +362,7 @@
       margin-right: 6px;
     }
 
-    /* Real Customer Vibes Gallery */
+    /* Gallery Section */
     .gallery-section {
       padding: 6rem 0;
     }
@@ -735,7 +739,6 @@
       const date = document.getElementById('eventDate').value;
       const packageSelected = document.getElementById('selectedPackage').value;
       
-      // Cafe D'light's exact WhatsApp number
       const phoneNumber = "918275582899"; 
       
       const message = `Hello Cafe D'light Nashik! I would like to reserve a slot:%0A%0A` +
@@ -749,4 +752,3 @@
   </script>
 </body>
 </html>
-
